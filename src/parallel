@@ -3547,6 +3547,8 @@ sub citation_notice {
        or
        not -t $Global::original_stderr
        or
+       -e "/etc/parallel/will-cite"
+       or
        -e $ENV{'HOME'}."/.parallel/will-cite") {
 	# skip
     } else {

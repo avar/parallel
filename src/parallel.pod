@@ -493,11 +493,13 @@ Implies B<--semaphore>.
 
 =item B<--citation>
 
-Print the BibTeX entry for GNU B<parallel> and silence citation
-notice.
+Print the BibTeX entry for GNU B<parallel> and silence citation notice
+for future invocations by creating a F<~/.parallel/will-cite>
+file. It's also possible to disable this on a system-wide basis by
+creating F</etc/parallel/will-cite>.
 
-If it is impossible for you to run B<--bibtex> you can use
-B<--will-cite>.
+If you'd like to disable the citation notice only for a single
+invocation you can use B<--will-cite>.
 
 If you use B<--will-cite> in scripts to be run by others you are
 making it harder for others to see the citation notice.  The
